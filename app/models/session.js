@@ -5,5 +5,8 @@ export default DS.Model.extend({
 	startHour: 	 	DS.attr('string'),
 	endHour: 		DS.attr('string'),
 
-	responsable: 	DS.belongsTo('responsable')
+	responsable: 	DS.belongsTo('responsable'),
+
+	lessons: 		DS.hasMany('lesson'),
+	volunteers: 	DS.hasMany('responsable')
 });
