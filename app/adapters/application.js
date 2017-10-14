@@ -1,5 +1,5 @@
 import ActiveModelAdapter from 'active-model-adapter';
 
 export default ActiveModelAdapter.extend({
-	host: 'localhost:3000'
+	host: 'https://nueva-vida.herokuapp.com'
 });
