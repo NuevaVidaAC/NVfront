@@ -1,5 +1,4 @@
-import ActiveModelAdapter from 'active-model-adapter';
+import FirebaseAdapter from 'emberfire/adapters/firebase';
 
-export default ActiveModelAdapter.extend({
-	host: 'https://nueva-vida.herokuapp.com'
+export default FirebaseAdapter.extend({
 });

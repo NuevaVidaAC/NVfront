@@ -1,0 +1,17 @@
+<form class="large-padded row center">
+	<div class="input-field col s6 offset-s3">
+		{{input
+			id='name'
+			value=name
+		}}
+		<label for="#name">Correo Electrónico</label>
+	</div>
+	<div class="input-field col s6 offset-s3">
+		{{input
+			id='date'
+			value=date
+		}}
+		<label for="#date">Correo Electrónico</label>
+	</div>
+	<button class="btn waves-effect btn-large" {{action 'createSubject' name date}}>Registrar</button>
+</form>

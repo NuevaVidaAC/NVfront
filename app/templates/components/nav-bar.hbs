@@ -1,0 +1,12 @@
+<nav>
+	<div class="nav-wrapper green accent-4">
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			{{#if session.isAuthenticated}}
+				<li>¡Hola!</li>
+				<li><a {{action 'signOut'}}>Sign Out</a></li>
+			{{else}}
+				<li>{{#link-to 'login'}}Iniciar Sesión{{/link-to}}</li>
+			{{/if}}
+		</ul>
+	</div>
+</nav>
